@@ -22,7 +22,7 @@ const accessToken = getUrlParameter('access_token');
 let client_id = 'cc332d7702a047d58bbab0cbe3db8f98';
 // Use the following site to convert your regular url to the encoded version:
 // https://www.url-encode-decode.com/
-let redirect_uri = 'file%3A%2F%2F%2FD%3A%5CCode%5CSpotifyTest%5Cindex.html%20'; // GitHub Pages URL or whatever your public url to this app is
+let redirect_uri = 'https%3A%2F%2Fadityachanan.github.io%2FSpotifytTest%2F'; // GitHub Pages URL or whatever your public url to this app is
 // *************** END *************************
 
 const redirect = `https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=token&redirect_uri=${redirect_uri}`;
