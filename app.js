@@ -37,7 +37,7 @@ let url = "https://api.spotify.com/v1/tracks/"
 let xhr = new XMLHttpRequest()
 xhr.open("GET", url)
 
-xhr.setRequestHeader(`Authorization: Bearer ${accessToken}`)
+xhr.setRequestHeader("Authorization", `Bearer ${accessToken}`)
 
 xhr.onreadystatechange = ()=>{
     if(xhr.readyState == 4 && xhr.status == 200)
