@@ -1,5 +1,5 @@
 
-const getUrlParameter = (sParam) => {
+/*const getUrlParameter = (sParam) => {
     let sPageURL = window.location.search.substring(1),////substring will take everything after the https link and split the #/&
         sURLVariables = sPageURL != undefined && sPageURL.length > 0 ? sPageURL.split('#') : [],
         sParameterName,
@@ -12,10 +12,11 @@ const getUrlParameter = (sParam) => {
             return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
         }
     }
-};
+};*/
 
 // Get Access Token
-const accessToken = getUrlParameter('access_token');
+var accessToken 
+//= getUrlParameter('access_token');
 
 // AUTHORIZE with Spotify (if needed)
 // *************** REPLACE THESE VALUES! *************************
