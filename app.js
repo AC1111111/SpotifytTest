@@ -31,4 +31,24 @@ if (accessToken == null || accessToken == "" || accessToken == undefined) {
     window.location.replace(redirect);
 }
 
-console.log(accessToken)
+
+let resp
+let url = ""
+let xhr = new XMLHttpRequest()
+xhr.open("GET", url)
+
+xhr.setRequestHeader(`Authorization: Bearer ${accessToken}`)
+
+xhr.onreadystatechange = ()=>{
+    if(xhr.readyState == 4 && xhr.status == 200)
+    {
+        resp = xhr.responseXML;
+        for(let i = 0; i < 5; i++)
+        {
+            console.log(resp[i])
+        }
+    }
+}
+
+xhr.send()
+
