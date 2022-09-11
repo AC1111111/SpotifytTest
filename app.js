@@ -33,7 +33,7 @@ if (accessToken == null || accessToken == "" || accessToken == undefined) {
 
 
 let resp
-let url = ""
+let url = "https://api.spotify.com/v1/tracks/"
 let xhr = new XMLHttpRequest()
 xhr.open("GET", url)
 
