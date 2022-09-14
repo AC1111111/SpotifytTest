@@ -2,7 +2,7 @@
 
 let clientID = "cc332d7702a047d58bbab0cbe3db8f98"
 let clientSecret = "a7cdb80e726c4db09903231498ee14b7"
-let redirectURI = "https%3A%2F%2Fadityachanan.github.io%2Fsessional-assessment-2%2F"
+let redirectURI = "https%3A%2F%2Fadityachanan.github.io%2FSpotifytTest%2F"
 let redirect = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&redirect_uri=${redirectURI}`
 let accessToken = ''
 
